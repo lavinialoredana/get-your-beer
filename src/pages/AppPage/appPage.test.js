@@ -16,7 +16,6 @@ describe("App Page", () => {
   it("to match snapshot", () => {
     //Arrange
     const { asFragment } = render(<App />, { wrapper: BrowserRouter });
-    const appHeaderElement = screen.getByTestId("app-header");
     // Assert
     expect(asFragment()).toMatchSnapshot();
   });

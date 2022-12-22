@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`description component to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="description-container"
+  >
+    <textarea
+      cols="4"
+      data-testid="description"
+      label="description"
+      rows="50"
+    >
+      Hello
+    </textarea>
+  </div>
+</DocumentFragment>
+`;
