@@ -13,6 +13,13 @@ describe("App Page", () => {
     cleanup();
   });
   // More details hre: https://testing-library.com/
+  it("to match snapshot", () => {
+    //Arrange
+    const { asFragment } = render(<App />, { wrapper: BrowserRouter });
+    const appHeaderElement = screen.getByTestId("app-header");
+    // Assert
+    expect(asFragment()).toMatchSnapshot();
+  });
   it("should contain header", () => {
     //Arrange
     render(<App />, { wrapper: BrowserRouter });
